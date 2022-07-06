@@ -10,26 +10,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MainPage(),
-    );
-  }
-}
-
-class MainPage extends StatefulWidget {
-  const MainPage({Key? key}) : super(key: key);
-
-  @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Sharing App'),
-        backgroundColor: Colors.green,
+        home: DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: const TabBar(
+            tabs: [
+              Tab(icon: Icon(Icons.folder_copy_rounded)),
+              Tab(icon: Icon(Icons.apps_outlined)),
+            ],
+          ),
+        ),
       ),
-    );
+    ));
   }
 }
