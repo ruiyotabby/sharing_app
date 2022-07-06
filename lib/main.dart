@@ -13,21 +13,31 @@ class MyApp extends StatelessWidget {
         home: DefaultTabController(
       length: 2,
       child: Scaffold(
-        endDrawer: Drawer(),
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 24, 223, 31),
+          backgroundColor: Colors.green,
           bottom: const TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.folder_copy_rounded)),
-              Tab(icon: Icon(Icons.apps_outlined)),
+              Text(
+                'Files',
+                style: TextStyle(fontSize: 24),
+              ),
+              Text(
+                'Apps',
+                style: TextStyle(fontSize: 24),
+              ),
             ],
           ),
-          title: Text('Sharing App'),
         ),
         body: const TabBarView(
           children: [
-            Icon(Icons.folder_copy_rounded),
-            Icon(Icons.apps_outlined),
+            Text(
+              'Files',
+              style: TextStyle(fontSize: 24),
+            ),
+            Text(
+              'Apps',
+              style: TextStyle(fontSize: 24),
+            ),
           ],
         ),
       ),
