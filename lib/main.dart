@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         home: DefaultTabController(
       length: 2,
       child: Scaffold(
+        endDrawer: Drawer(),
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 24, 223, 31),
           bottom: const TabBar(
