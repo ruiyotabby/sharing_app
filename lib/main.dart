@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Sharing App'),
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.greenc,
           bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.folder_copy_rounded)),
