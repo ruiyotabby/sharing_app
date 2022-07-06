@@ -23,6 +23,12 @@ class MyApp extends StatelessWidget {
           ),
           title: Text('Sharing App'),
         ),
+        body: const TabBarView(
+          children: [
+            Icon(Icons.folder_copy_rounded),
+            Icon(Icons.apps_outlined),
+          ],
+        ),
       ),
     ));
   }
